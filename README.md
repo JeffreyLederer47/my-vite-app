@@ -24,14 +24,16 @@ When I import the file into App.tsx using:
 ```
 import Header from './components/Header.tsx';
 ```
+
+I then modified vite.config.ts and tsconfig.json files to support absolute paths. (See code in this repository.)
+
 I ran *npm run build* and the build was successful.
 
-I modified vite.config.ts and tsconfig.json files to support absolute paths. (See code in this repository.)
 When I use absolute path:
 ```
 import Header from '@components/Header.tsx';
 ```
-I get the following error:
+I get the following error when I build using absolute path:
 ```
 src/App.tsx:5:20 - error TS2307: Cannot find module '@components/Header.tsx' or its corresponding type declarations.
 ```
