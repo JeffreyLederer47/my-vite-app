@@ -37,6 +37,7 @@ I get the following error when I build using absolute path:
 ```
 src/App.tsx:5:20 - error TS2307: Cannot find module '@components/Header.tsx' or its corresponding type declarations.
 ```
+The application runs correctly with both relative paths and absolute paths (*npm run dev*)
 
 I am not sure what is the issue
 
