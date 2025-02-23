@@ -39,6 +39,9 @@ src/App.tsx:5:20 - error TS2307: Cannot find module '@components/Header.tsx' or 
 ```
 The application runs correctly with both relative paths and absolute paths (*npm run dev*)
 
+I am running this on a Windows 11 computer, latest version of Nodejs and npm installed.
+
+
 I am not sure what is the issue.
 
 I followed the code in this [web site](https://medium.com/@rimonamdadul301/steps-to-set-up-absolute-paths-in-a-react-project-3389a9b49c2b "Guide to absolute paths in React").
