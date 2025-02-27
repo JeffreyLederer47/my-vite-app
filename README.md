@@ -29,7 +29,7 @@ When I use absolute path:
 import Header from '@components/Header.tsx';
 ```
 
-It ran *npm run build* and the build was successful. The secret (could not find it documented anywhere) is add CompilerOptions paths to tsconfig.node.json and tsconfig.app.json as well as tsconfig.json.
+It ran *npm run build* and the build was successful. The secret (could not find it documented anywhere) is to add CompilerOptions paths to tsconfig.node.json and tsconfig.app.json as well as tsconfig.json.
 
 I am running this on a Windows 11 computer, latest version of Nodejs and npm installed.
 
