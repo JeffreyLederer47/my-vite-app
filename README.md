@@ -9,7 +9,7 @@ npm install
 npm run dev
 ```
 
-The application ran successfully. I then added the diretory *components* below src directory.
+The application ran successfully. I then added the directory *components* below src directory.
 In the components directory, I created a tsx file *Header.tsx*:
 
 ```
@@ -20,28 +20,18 @@ const Header = () => {
 }
 export default Header;
 ```
-When I import the file into App.tsx using:
-```
-import Header from './components/Header.tsx';
-```
 
-I then modified vite.config.ts and tsconfig.json files to support absolute paths. (See code in this repository.)
+I then modified vite.config.ts tsconfig.json, tsconfig.node.json and tsconfig.app.json files to support absolute paths. (See code in this repository.)
 
-I ran *npm run build* and the build was successful.
 
 When I use absolute path:
 ```
 import Header from '@components/Header.tsx';
 ```
-I get the following error when I build using absolute path:
-```
-src/App.tsx:5:20 - error TS2307: Cannot find module '@components/Header.tsx' or its corresponding type declarations.
-```
-The application runs correctly with both relative paths and absolute paths (*npm run dev*)
+
+It ran *npm run build* and the build was successful. The secret (could not find it documented anywhere) is add CompilerOptions paths to tsconfig.node.json and tsconfig.app.json as well as tsconfig.json.
 
 I am running this on a Windows 11 computer, latest version of Nodejs and npm installed.
 
-
-I am not sure what is the issue.
 
 
